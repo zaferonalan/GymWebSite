@@ -1,6 +1,7 @@
 import { Navbar } from "@material-tailwind/react"
 import Logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
+import DarkMode from "./DarkMode";
 
 
 const navigationLink = [
@@ -34,8 +35,8 @@ const navigationLink = [
 const NavigationBar = () => {
 
     return (
-    <Navbar className="fixed z-10 shadow-md " color="transparent" fullWidth>
-        <div className="border-2 max-w-[110rem] mx-auto ">
+    <Navbar className="fixed z-10 shadow-md dark:bg-dark dark:text-white " color="transparent" fullWidth>
+        <div className="max-w-[110rem] mx-auto ">
             <div className="flex items-center justify-between">
                 <div className="sm:flex items-center">
                     <img src={Logo} alt="" className="w-24 object-contain"/>
@@ -44,10 +45,11 @@ const NavigationBar = () => {
                     <ul className="flex items-center gap-8">
                         {navigationLink.map(({id, name, link}) => {
                             return <li key={id} className="py-4 text-black">
-                                <Link to={link} className="inline-block text-lg font-semibold hover:text-red-500">{name}</Link>
+                                <Link to={link} className="inline-block text-lg font-semibold hover:text-red-500 dark:text-white">{name}</Link>
                             </li>
                         })}
                         {/* darkMode iplemente */}
+                        <DarkMode/>
                     </ul>
                 </nav>
             </div>
