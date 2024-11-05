@@ -1,9 +1,9 @@
-import { Button } from "@material-tailwind/react"
+import NavigationBar from "./components/NavigationBar/NavigationBar"
 
 
 const App = () => {
   return (
-    <Button>Gönder</Button>
+    <NavigationBar/>
   )
 }
 
