@@ -7,7 +7,7 @@ import { HiMenuAlt1, HiMenuAlt3 } from "react-icons/hi";
 import ResponsiveMenu from "./ResponsiveMenu";
 
 
-const navigationLink = [
+export const navigationLink = [
     {
         id: 1,
         name: "ABOUT",
@@ -37,7 +37,7 @@ const navigationLink = [
 
 const NavigationBar = () => {
 
-    const [showMenu, setShowMenu] = useState(false)
+    const [showMenu, setShowMenu] = useState(true)
 
     const toggleMenu = () => {
         setShowMenu(!showMenu);
