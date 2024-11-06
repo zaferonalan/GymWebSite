@@ -2,6 +2,9 @@ import { Navbar } from "@material-tailwind/react"
 import Logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
 import DarkMode from "./DarkMode";
+import { useState } from "react";
+import { HiMenuAlt1, HiMenuAlt3 } from "react-icons/hi";
+import ResponsiveMenu from "./ResponsiveMenu";
 
 
 const navigationLink = [
@@ -34,6 +37,12 @@ const navigationLink = [
 
 const NavigationBar = () => {
 
+    const [showMenu, setShowMenu] = useState(false)
+
+    const toggleMenu = () => {
+        setShowMenu(!showMenu);
+    }
+
     return (
     <Navbar className="fixed z-10 shadow-md dark:bg-dark dark:text-white " color="transparent" fullWidth>
         <div className="max-w-[110rem] mx-auto ">
@@ -41,7 +50,7 @@ const NavigationBar = () => {
                 <div className="sm:flex items-center">
                     <img src={Logo} alt="" className="w-24 object-contain"/>
                 </div>
-                <nav className="">
+                <nav className="hidden md:block">
                     <ul className="flex items-center gap-8">
                         {navigationLink.map(({id, name, link}) => {
                             return <li key={id} className="py-4 text-black">
@@ -52,8 +61,29 @@ const NavigationBar = () => {
                         <DarkMode/>
                     </ul>
                 </nav>
+                {/* Mobil view */}
+                <div className="flex items-center md:hidden gap-4 py-4">
+                    <DarkMode/>
+                    {/* Mobil hamburgerMenu */}
+                    {
+                        showMenu ? (
+                            <HiMenuAlt1
+                                onClick={toggleMenu}
+                                className="cursor-pointer transition-all text-black dark:text-white"
+                                size={30}
+                            />
+                        ):(
+                            <HiMenuAlt3
+                                onClick={toggleMenu}
+                                className="cursor-pointer transition-all text-black dark:text-white"
+                                size={30}
+                            />
+                        )
+                    }
+                </div>
             </div>
         </div>
+        <ResponsiveMenu showMenu={showMenu}/>
     </Navbar>
   )
 }
