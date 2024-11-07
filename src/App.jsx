@@ -1,9 +1,13 @@
+import Hero from "./components/Hero"
 import NavigationBar from "./components/NavigationBar/NavigationBar"
 
 
 const App = () => {
   return (
-    <NavigationBar/>
+    <>
+      <NavigationBar/>
+      <Hero/>
+    </>
   )
 }
 
