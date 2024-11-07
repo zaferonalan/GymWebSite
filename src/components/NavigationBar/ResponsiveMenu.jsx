@@ -25,6 +25,9 @@ const ResponsiveMenu = ({showMenu}) => {
             </ul>
           </nav>
       </div>
+      <div>
+        <h1> Made with ❤️ by <a href="#">Zafer Günay Önalan</a></h1>
+      </div>
     </div>
   )
 }

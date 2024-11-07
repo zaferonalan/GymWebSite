@@ -37,7 +37,7 @@ export const navigationLink = [
 
 const NavigationBar = () => {
 
-    const [showMenu, setShowMenu] = useState(true)
+    const [showMenu, setShowMenu] = useState(false)
 
     const toggleMenu = () => {
         setShowMenu(!showMenu);
