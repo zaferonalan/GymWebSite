@@ -22,6 +22,7 @@ const Hero = () => {
             <Typography variant="h1" className="text-5xl md:text-7xl font-bold text-white">
               Your Fitness Journey Begins!
             </Typography>
+            <Typography variant="paragraph" className="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ullam ipsa quibusdam officiis numquam ipsam.</Typography>
             <Button variant="filled" color="red" className="rounded-md px-4 py-3">Get Started</Button>
           </div>
           <div className="md:w-1/2">

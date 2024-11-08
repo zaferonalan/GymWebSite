@@ -44,7 +44,7 @@ const NavigationBar = () => {
     }
 
     return (
-    <Navbar className="fixed z-10 shadow-md dark:bg-dark dark:text-white " color="white" fullWidth>
+    <Navbar className="fixed z-10 shadow-md dark:bg-dark dark:text-white" color="white" fullWidth>
         <div className="max-w-[110rem] mx-auto ">
             <div className="flex items-center justify-between">
                 <div className="sm:flex items-center">
