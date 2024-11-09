@@ -1,9 +1,12 @@
 import { Button, Card, Typography } from "@material-tailwind/react"
+import AboutImg from "../assets/About.jpg";
+import { Dumbbell, Users, Target} from "lucide-react";
+
 
 const About = () => {
   return (
-    <section id="about" className="dark:bg-dark bg-white dark:text-white">
-        <div className="border-2 p-8 text-center max-w-7xl mx-auto">
+    <section id="about" className="dark:bg-dark bg-gray-100 dark:text-white">
+        <div className="p-8 text-center max-w-7xl mx-auto">
             <Typography variant="h3" color="red" className="text-4xl font-bold mb-4">About Us</Typography>
             <Typography variant="paragraph" className="text-gray-600 dark:text-gray-200 max-w-xl mx-auto">
                 Our gym is dedicated to helping you achive your fitness goals 
@@ -24,8 +27,40 @@ const About = () => {
                                 <Button variant="filled" className="bg-red-500 text-white px-3 py-2 rounded-md">Meet Out Trainers</Button>
                             </div>
                         </div>
-                        
+                        <img src={AboutImg} alt="Gym" height={310} width={550} className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last" />
                     </Card>
+                </div>
+                <div className="grid gap-6 lg:grid-cols-3 lg:gap-12 mt-16">
+                    <div>
+                        <div className="flex flex-col items-center space-y-4 p-6 bg-white dark:bg-dark rounded shadow dark:shadow-gray-300">
+                            <Dumbbell className="h-12 w-12 text-primary"/>
+                            <Typography variant="h3" className="text-xl font-bold">Our Mission</Typography>
+                            <Typography variant="paragraph" className="text-center">
+                                To inspire and empower individuals to reach their full potential through fitness, 
+                                fostering a healthier and happier community          
+                            </Typography>
+                        </div>
+                    </div>
+                    <div>
+                        <div className="flex flex-col items-center space-y-4 p-6 bg-white dark:bg-dark rounded shadow dark:shadow-gray-300">
+                            <Users className="h-12 w-12 text-primary"/>
+                            <Typography variant="h3" className="text-xl font-bold">Our Community</Typography>
+                            <Typography variant="paragraph" className="text-center">
+                                We pride ourselves on creating a welcoming, inclusive environment where members support and 
+                                motivate each other to actieve their goals.           
+                            </Typography>
+                        </div>
+                    </div>
+                    <div>
+                        <div className="flex flex-col items-center space-y-4 p-6 bg-white dark:bg-dark rounded shadow dark:shadow-gray-300">
+                            <Target className="h-12 w-12 text-primary"/>
+                            <Typography variant="h3" className="text-xl font-bold">Our Approach</Typography>
+                            <Typography variant="paragraph" className="text-center">
+                                We combine cutting-edge equipment, personalized training programs, 
+                                and nutritional guidance to help you achieve sustainable results.          
+                            </Typography>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
