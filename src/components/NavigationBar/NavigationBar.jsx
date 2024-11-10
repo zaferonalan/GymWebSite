@@ -11,27 +11,27 @@ export const navigationLink = [
     {
         id: 1,
         name: "ABOUT",
-        link: "#/about"
+        link: "/#about"
     },
     {
         id: 2,
         name: "SERVICES",
-        link: "#/services"
+        link: "/#services"
     },
     {
         id: 3,
         name: "PRICING",
-        link: "#/pricing"
+        link: "/#pricing"
     },
     {
         id: 4,
         name: "TESTIMONIAL",
-        link: "#/testimonial"
+        link: "/#testimonials"
     },
     {
         id: 5,
         name: "CONTACT",
-        link: ""
+        link: "/#contact"
     }
 ]
 
