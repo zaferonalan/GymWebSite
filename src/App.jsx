@@ -3,6 +3,7 @@ import Hero from "./components/Hero"
 import NavigationBar from "./components/NavigationBar/NavigationBar"
 import Pricing from "./components/Pricing"
 import Services from "./components/Services"
+import Testimonials from "./components/Testimonials"
 
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
       <About/>
       <Services/>
       <Pricing/>
+      <Testimonials/>
     </>
   )
 }

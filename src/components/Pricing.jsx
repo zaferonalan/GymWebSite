@@ -41,7 +41,7 @@ const Pricing = () => {
                 {
                     pricingJson.map((item) => {
                         return(
-                            <Card key={item.plan} className=" dark:bg-dark bg-white dark:text-white border-2 p-6 rounded-lg shadow-md text-start">
+                            <Card key={item.plan} className=" dark:bg-dark bg-blue-gray-50 dark:text-white border-2 p-6 rounded-lg shadow-md text-start">
                                 <CardBody>
                                     <Typography variant="h3" className="font-semibold">{item.plan}</Typography>
                                     <Typography variant="paragraph" className="text-sm">{item.text}</Typography>
