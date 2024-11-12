@@ -41,13 +41,13 @@ const Testimonials = () => {
             </div>
             {/* Testimonials Card */}
             <div>
-                <Carousel className="border-2">
+                <Carousel className="border-2 shadow-lg ">
                     {
                         TestimonialData.map((data) => {
                             return(
                                 <div key={data.id} className="my-6">
-                                    <Card  className="bg-transparent flex flex-col gap-4 shadow-lg py-8 px-6 mx-4 rounded-xl">
-                                        <CardHeader className="bg-transparent mb-4">
+                                    <Card  className="bg-transparent flex flex-col gap-4 shadow-none py-8 px-6 mx-4 rounded-xl">
+                                        <CardHeader className="bg-transparent shadow-none mb-4">
                                             <img src={data.img} alt="" className="rounded-full w-50 h-50" />
                                         </CardHeader>
                                         <CardBody className="flex flex-col items-center gap-4">
