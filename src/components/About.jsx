@@ -1,4 +1,4 @@
-import { Button, Card, Typography } from "@material-tailwind/react"
+import { Button, Card, CardBody, CardHeader, Typography } from "@material-tailwind/react"
 import AboutImg from "../assets/About.jpg";
 import { Dumbbell, Users, Target} from "lucide-react";
 
@@ -32,34 +32,46 @@ const About = () => {
                 </div>
                 <div className="grid gap-6 lg:grid-cols-3 lg:gap-12 mt-16">
                     <div>
-                        <div className="flex flex-col items-center space-y-4 p-6 bg-white dark:bg-dark rounded shadow dark:shadow-gray-300">
-                            <Dumbbell className="h-12 w-12 text-primary"/>
-                            <Typography variant="h3" className="text-xl font-bold">Our Mission</Typography>
-                            <Typography variant="paragraph" className="text-center">
-                                To inspire and empower individuals to reach their full potential through fitness, 
-                                fostering a healthier and happier community          
-                            </Typography>
-                        </div>
+                        <Card className=" space-y-4 p-6 bg-white dark:bg-dark rounded shadow dark:shadow-gray-300">
+                            <CardHeader className="shadow-none flex flex-col items-center bg-white dark:bg-dark  mt-2">
+                                <Dumbbell className="h-12 w-12 text-primary text-center"/>
+                                <Typography variant="h3" className="text-xl font-bold mt-5 text-black dark:text-white">Our Mission</Typography>
+                            </CardHeader>
+                            <CardBody>
+                                <Typography variant="paragraph" className="text-center dark:text-white text-black">
+                                    To inspire and empower individuals to reach their full potential through fitness, 
+                                    fostering a healthier and happier community          
+                                </Typography>
+                            </CardBody>
+                        </Card>
                     </div>
                     <div>
-                        <div className="flex flex-col items-center space-y-4 p-6 bg-white dark:bg-dark rounded shadow dark:shadow-gray-300">
-                            <Users className="h-12 w-12 text-primary"/>
-                            <Typography variant="h3" className="text-xl font-bold">Our Community</Typography>
-                            <Typography variant="paragraph" className="text-center">
-                                We pride ourselves on creating a welcoming, inclusive environment where members support and 
-                                motivate each other to actieve their goals.           
-                            </Typography>
-                        </div>
+                        <Card className=" space-y-4 p-6 bg-white dark:bg-dark rounded shadow dark:shadow-gray-300">
+                                <CardHeader className="shadow-none flex flex-col items-center bg-white dark:bg-dark  mt-2">
+                                    <Users className="h-12 w-12 text-primary text-center"/>
+                                    <Typography variant="h3" className="text-xl font-bold mt-5 text-black dark:text-white">Our Community</Typography>
+                                </CardHeader>
+                                <CardBody>
+                                    <Typography variant="paragraph" className="text-center dark:text-white text-black">
+                                        We pride ourselves on creating a welcoming, inclusive environment where members support and 
+                                        motivate each other to actieve their goals.          
+                                    </Typography>
+                                </CardBody>
+                        </Card>
                     </div>
                     <div>
-                        <div className="flex flex-col items-center space-y-4 p-6 bg-white dark:bg-dark rounded shadow dark:shadow-gray-300">
-                            <Target className="h-12 w-12 text-primary"/>
-                            <Typography variant="h3" className="text-xl font-bold">Our Approach</Typography>
-                            <Typography variant="paragraph" className="text-center">
-                                We combine cutting-edge equipment, personalized training programs, 
-                                and nutritional guidance to help you achieve sustainable results.          
-                            </Typography>
-                        </div>
+                        <Card className=" space-y-4 p-6 bg-white dark:bg-dark rounded shadow dark:shadow-gray-300">
+                            <CardHeader className="shadow-none flex flex-col items-center bg-white dark:bg-dark  mt-2">
+                                <Target className="h-12 w-12 text-primary text-center"/>
+                                <Typography variant="h3" className="text-xl font-bold mt-5 text-black dark:text-white">Our Approach</Typography>
+                            </CardHeader>
+                            <CardBody>
+                                <Typography variant="paragraph" className="text-center dark:text-white text-black">
+                                    We combine cutting-edge equipment, personalized training programs, 
+                                    and nutritional guidance to help you achieve sustainable results.          
+                                </Typography>
+                            </CardBody>
+                        </Card>
                     </div>
                 </div>
             </div>
